@@ -9,8 +9,8 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import login from './components/account/login.vue';
-import register from './components/account/register.vue';
+import home from './components/Home.vue';
+import shopcar from './components/shopcar/car.vue';
 
 // 导入 mint-ui 的 css
 import 'mint-ui/lib/style.min.css';
@@ -26,10 +26,10 @@ import  mintui from 'mint-ui';
 Vue.use(mintui);
 
 var router1 = new VueRouter({
-
+  linkActiveClass:'mui-active',
   routes:[
-    {path:'/login',component:login},
-    {path:'/register',component:register}
+    {path:'/home',component:home},
+    {path:'/shopcar',component:shopcar}
   ]
 })
 
