@@ -12,6 +12,8 @@ Vue.use(VueRouter);
 import home from './components/Home.vue';
 import shopcar from './components/shopcar/car.vue';
 import newslist from './components/news/newslist.vue';
+import newsinfo from './components/news/newsinfo.vue';
+
 
 // 导入 mint-ui 的 css
 import 'mint-ui/lib/style.min.css';
@@ -44,7 +46,8 @@ var router1 = new VueRouter({
   routes:[
     {path:'/home',component:home},
     {path:'/shopcar',component:shopcar},
-    {path:'/news/newslist',component:newslist}
+    {path:'/news/newslist',component:newslist},
+    {path:'/news/newsinfo/:id',component:newsinfo}
   ]
 })
 
