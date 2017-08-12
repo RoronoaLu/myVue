@@ -26,7 +26,7 @@
             </router-link>
         </nav>
         <!--在页面上 进行渲染  -->
-        <router-view></router-view> 
+        <router-view></router-view>
     </div>
 </template>
 
