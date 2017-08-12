@@ -1,6 +1,6 @@
 <template>
   <div id="temp">
-      购物车
+     
   </div>    
 </template>
 

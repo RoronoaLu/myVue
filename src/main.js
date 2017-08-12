@@ -34,6 +34,11 @@ Vue.use(mintui);
 import VueResource from 'vue-resource';
 Vue.use(VueResource);
 
+// 日期格式化
+import moment from 'moment';
+Vue.filter('datefmt',function(input,fntstring){
+    return moment(input).format(fntstring)
+})
 var router1 = new VueRouter({
   linkActiveClass:'mui-active',
   routes:[
